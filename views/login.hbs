@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    }
+
+    body {
+    background-color: #3E3A3A;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    }
+
+    .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    }
+
+    .login-form {
+    padding: 40px;
+    margin-top: 280px;
+    }
+
+    .login-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px; /* Increase font size */
+    }
+
+    .login-form input {
+    padding: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    }
+
+    .login-form button {
+    padding: 10px 230px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s;
+    display: block;
+    margin-top: 20px;
+    border: white solid 1px;
+        
+    }
+
+    .login-form button:hover {
+    background-color: white;
+    color: #3E3A3A;
+
+    }
+
+    .additional-options {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .additional-options a {
+    color: white;
+    text-decoration: none;
+    }
+
+    .additional-options a:first-child {
+    margin-right: auto; 
+    font-size: 16px;
+    font-weight: lighter;
+    }
+
+    .additional-options a:last-child {
+    margin-left: auto; 
+    font-size: 16px;
+    font-weight: lighter;
+    }
+    .login-logo {
+    width: 350px; /* Adjust logo size as needed */
+    height: auto;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+</style>
+</head>
+<body>
+   <img src="ww.png" alt="Logo" class="login-logo">
+            
+        </div>
+    </div>
+    <div class="login-container">
+        <form class="login-form" action="/auth/login" method="POST">
+
+            <input type="text" name="email" id="email" placeholder="Email" required>
+
+            <input type="password" id="passwordc\" name="password" placeholder="Password" required>
+
+            <div class="additional-options">           
+                <a href="#">Forgot Password</a>
+            </div>
+
+                <button type="submit">Log In</button>
+                <button onclick="window.location.href='/register'">Register</button>
+
+</button>
+        </form>
+    </div>
+
+</body>
+</html>
+  
